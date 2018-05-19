@@ -20,7 +20,7 @@ bot.command("help", function (msg, reply, next) {
   reply.text("This bot implements a dumb minigame. Say /game if you want to play.");
 });
 
-bot.command("start", "game", function (msg, reply, next) {
+bot.command("v ", "game", function (msg, reply, next) {
   reply.game(gameName);
 });
 
@@ -54,7 +54,7 @@ server.get("/telegramBot/test.html", function (req, res, next) {
   res.send("<h1>It works!</h1> <p>Server set up successfully. Use <a href=\"" + bot.linkGame(gameName) + "\">this link</a> to play the game.");
 });
 
-server.listen(3103, function () {
+server.listen(process.env.PORT || 3103, function () {
   bot.ready(function () {
     console.log("Server & bot ready.\nOpen %s to verify that the HTTP server is accessible publicly.", url.resolve(publicBase, "/telegramBot/test.html"));
     console.log("To play, send /game or use the following link to play:\n");
