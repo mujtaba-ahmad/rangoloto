@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-if (process.argv.length !== 4) {
-  console.error("Usage: ./server.js <auth token> <webserver base URL>\nSee the README.");
-  process.exit(1);
-}
+// if (process.argv.length !== 4) {
+//   console.error("Usage: ./server.js <auth token> <webserver base URL>\nSee the README.");
+//   process.exit(1);
+// }
 
 var url = require("url");
 var botgram = require("botgram");
