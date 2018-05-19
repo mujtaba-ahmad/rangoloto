@@ -10,8 +10,8 @@ var botgram = require("botgram");
 var express = require("express");
 
 var gameName = "rango";
-var publicBase = process.argv[3];
-var bot = botgram(process.argv[2]);
+var publicBase = "https://protected-mesa-41831.herokuapp.com";
+var bot = botgram("520428622:AAF8Z6Y8aDW_mRnA0g7LEHyz56u2sjrIEiM");
 var server = express();
 
 var queries = {};
